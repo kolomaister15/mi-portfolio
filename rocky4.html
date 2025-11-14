@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rocky IV</title>
+    <link rel="stylesheet" href="estilorocky.css">
+
+</head>
+<body>
+
+    <h1 class="titulo">Rocky IV</h1>
+
+    <img src="https://tse4.mm.bing.net/th/id/OIP.ye32Q0HPe0KaShMWYta8hwHaKr?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+         alt="Portada Rocky IV" class="portada">
+
+
+         <div class="recuadro">
+    <h2 class="subtitulo">Información de la película</h2>
+    <p><strong>Título:</strong> Rocky IV</p>
+    <p><strong>Director:</strong> Sylvester Stallone</p>
+    <p><strong>Año:</strong> 1985</p>
+
+    <h3 class="subtitulo">Actores principales</h3>
+    <ul>
+        <li>Sylvester Stallone como Rocky Balboa</li>
+        <li>Dolph Lundgren como Ivan Drago</li>
+        <li>Talia Shire como Adrian Balboa</li>
+        <li>Carl Weathers como Apollo Creed</li>
+    </ul>
+
+    <h3 class="subtitulo">Sinopsis</h3>
+    <p>
+        Rocky Balboa debe enfrentar al imponente boxeador soviético Ivan Drago,
+        tras la trágica pelea que cambia su vida. Con la Guerra Fría como telón de fondo,<br>
+        Rocky entrena en Rusia para una de las peleas más importantes de su carrera.
+    </p>
+
+    <h2 class="trailer">Trailer Rocky 4</h2>
+    <a href="https://www.bing.com/videos/riverview/relatedvideo?q=trailer+rocky+4&&mid=24A76B2798C1046A1B2724A76B2798C1046A1B27&FORM=VAMGZC" target="_blank"> ver el trailer</a>
+
+    <p>
+        Más información en 
+        <a href="https://es.wikipedia.org/wiki/Rocky_IV" target="_blank">
+            Wikipedia
+        </a>.
+    </p>
+</div>
+    <h2 class="subtitulo">Reserva de entradas</h2>
+    <form class="formulario">
+        <label>
+            Su dirección de correo electrónico:
+            <input type="email" name="correo" required>
+        </label>
+
+        <label>
+            Ciudad:
+            <select name="ciudad">
+                <option>Mar del Plata</option>
+                <option>Necochea</option>
+                <option>Pinamar</option>
+                <option>Miramar</option>
+            </select>
+        </label>
+
+        <label>
+            Fecha:
+            <input type="date" name="fecha" required>
+        </label>
+
+        <label>
+            Hora:
+            <select name="hora">
+                <option>19:45</option>
+                <option>21:45</option>
+                <option>23:45</option>
+            </select>
+        </label>
+
+        <label>
+            Número de entradas:
+            <input type="number" name="entradas" min="1" max="10" required>
+        </label>
+
+        <br><br>
+        <input type="submit" value="Reservar">
+    </form>
+
+</body>
+</html>

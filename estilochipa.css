@@ -1,0 +1,38 @@
+body{
+
+    background-image: url(img/fondochipa.jpg);
+    
+}
+table{
+    background-color: rgb(255, 196, 0);
+    margin: auto;
+}
+.titulo{
+    margin: auto;
+    text-align: center;
+    background-color: rgb(243, 153, 36);
+    
+    height: 50%;
+    border-radius: 10px;
+    border: 3px coral;
+}
+.recuadro{
+    width: 100%;
+    height: 200%;
+    background-color: rgba(243, 153, 36, 0.733);
+    padding: 10px;
+}
+.imagen {
+    margin: auto;
+    display: block;
+    height: 600px;
+    margin-top: 30px;
+}
+.recuadrobot{
+    width: 100%;
+    height: 200%;
+    background-color: rgba(243, 153, 36, 0.733);
+    padding: 10px;
+    text-align: center;
+
+}

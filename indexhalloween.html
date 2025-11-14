@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Abandoned Hospital</title>
+  <link rel="stylesheet" href="estiloshalloween.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">El hospital abandonado</h1>
+      <ul class="menu">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#story">Historia</a></li>
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#visita">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-content">
+        <h2>¿Te animás a entrar?</h2>
+        <a href="#story" class="btn"> Conocé el Hospital de Saint Ravel</a>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section id="story">
+      <article>
+        <h2>La historia del Hospital</h2>
+        <p>
+            🕯️ La historia del Hospital de Saint Ravel
+
+            Durante la Primera Guerra Mundial, en un pequeño pueblo al norte de Francia, se levantaba el Hospital de Saint Ravel, un edificio gris de piedra húmeda que sirvió como refugio y condena para cientos de soldados heridos. Allí, el aire olía a desinfectante y pólvora, y los pasillos se llenaban de gritos ahogados que se mezclaban con los rezos de las enfermeras.
+            
+            El ala este fue destinada a los casos más graves: hombres mutilados, infectados o moribundos. Pero un día, un ataque aéreo alcanzó esa parte del hospital. El techo se desplomó y el fuego consumió todo. Las enfermeras que intentaron rescatar a los pacientes quedaron atrapadas junto a ellos, y se dice que murieron rezando por sus almas.
+            
+            Después del fin de la guerra, el edificio fue abandonado. Nadie quiso volver a usarlo, porque quienes se acercaban juraban escuchar voces pidiendo ayuda entre el humo invisible. Algunos aseguraban ver una figura vestida de blanco caminando por los pasillos carbonizados, empujando una camilla oxidada.
+            
+            Con el tiempo, los aldeanos aprendieron a evitar el lugar. Pero cuando el viento sopla desde el norte, todavía se oyen ecos metálicos... como si los fantasmas del Hospital de Saint Ravel siguieran esperando atención médica que nunca llegará.
+        </p>
+      </article>
+
+      
+<div class="galeria">
+    <section id="gallery">
+        <h2>Galeria de fotos:</h2>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide"><img src="img/galeria1.png" alt=" del hospital"></div>
+            <div class="slide"><img src="img/galeria2.png" alt="Camilla abandonada"></div>
+            <div class="slide"><img src="img/galeria3.png" alt="Ventana rota"></div>
+            <div class="slide"><img src="img/galeria4.png" alt="Habitación en ruinas"></div>
+          </div>
+        </div>
+      </section>
+      
+<section id="contac">
+        <div class="contacto">
+
+
+              <section id="visita">
+                <h2>Reserva tu visita guiada</h2>
+                <p class="intro">
+                  ¿Te animás a recorrer los pasillos del Hospital Abandonado?  
+                  Completá el formulario y te enviaremos los detalles de la próxima visita nocturna.
+                </p>
+              
+                <form id="form-visita">
+                  <label for="nombre">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              
+                  <label for="email">Correo electrónico</label>
+                  <input type="email" id="email" name="email" placeholder="Tu email" required>
+              
+                  <label for="fecha">Fecha preferida</label>
+                  <input type="date" id="fecha" name="fecha" required>
+              
+                  <label for="personas">Cantidad de personas</label>
+                  <input type="number" id="personas" name="personas" min="1" max="6" value="1" required>
+              
+                  <label for="mensaje">Mensaje o comentarios</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Algo que quieras contarnos?"></textarea>
+              
+                  <button type="submit">Enviar solicitud</button>
+                </form>
+              </section>
+              
+

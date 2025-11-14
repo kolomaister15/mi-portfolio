@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(147, 147, 245);
+}
+.portada {
+    background-image: url(IMG/portadamipagina.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+
+
+}
+.logo{
+
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    
+}
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.primero {
+     background-color: rgba(21, 5, 243, 0.377);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.segundo {
+     background-color: rgba(21, 5, 243, 0.377);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+.tercero {
+     background-color: rgba(21, 5, 243, 0.377);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.cuarta {
+     background-color: rgba(21, 5, 243, 0.377);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.quinto{
+     background-color: rgba(21, 5, 243, 0.377);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}

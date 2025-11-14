@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url(img/fondocafe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+  
+}
+
+header {
+    background-color: #5d4037;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #f8f3ef;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d7ccc8;
+}
+.logo{
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #efebe9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cafe-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.cafe-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cafe-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+form.form-reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #efebe9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8d6e63;
+    width: 100%;
+}
+
+button {
+    background-color: #6d4c41;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5d4037;
+}
+
+footer {
+    background-color: #5d4037;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}

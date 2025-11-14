@@ -1,0 +1,47 @@
+body {
+    background-image: url(IMG/fondopeli.jpg);
+}
+.titulo {
+    color: rgb(252, 174, 7);
+    text-align: center;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 600%;
+}
+.subtitulo {
+    color: rgb(0, 0, 0);
+}
+.portada {
+    display: block;
+    margin: auto;
+    width: 250px;
+    border: 5px solid rgb(252, 174, 7);
+}
+
+.formulario {
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.trailer  {
+
+    color: rgb(0, 0, 0);
+}
+label {
+    display: block;
+    margin-top: 8px;
+}
+.recuadro {
+    background-color: rgba(255, 255, 255, 0.767);
+    height: 200%;
+    width: 50%;
+    padding:15px;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+}
+ul{
+    list-style-position: inside;
+   
+}

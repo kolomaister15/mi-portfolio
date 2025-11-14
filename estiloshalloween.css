@@ -1,0 +1,373 @@
+/* === PALETA ===
+Fondo principal: #0b0c10
+Secundario: #1f2833
+Texto: #c5c6c7
+Acento verde hospital: #45a29e
+Rojo sangre: #ff3333
+Hover / Glow: #66fcf1
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    line-height: 1.6;
+  }
+  
+  /* === NAVBAR === */
+  header {
+    position: fixed;
+    width: 100%;
+    background: rgba(11, 12, 16, 0.7);
+    backdrop-filter: blur(6px);
+    z-index: 10;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+  
+  .logo {
+    color: #66fcf1;
+    font-size: 1.4rem;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-left: 1.5rem;
+  }
+  
+  .menu a {
+    color: #c5c6c7;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #66fcf1;
+  }
+  
+  /* === HERO === */
+  #hero {
+    height: 100vh;
+    background: url(img/fondohalloween.png) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  #hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    animation: flicker 3s infinite;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #45a29e;
+    color: #0b0c10;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover {
+    background: #66fcf1;
+    box-shadow: 0 0 10px #66fcf1;
+  }
+  
+  /* === HISTORIA === */
+  #story {
+    background: #1f2833;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  #story h2 {
+    color: #66fcf1;
+    margin-bottom: 1rem;
+  }
+  
+  /* === GALERÍA === */
+  #gallery {
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .img-box {
+    background: #1f2833;
+    height: 200px;
+    border: 2px solid #45a29e;
+    transition: all 0.3s;
+    position: relative;
+  }
+  
+  .img-box:hover {
+    background: #45a29e;
+    box-shadow: 0 0 15px #66fcf1;
+    cursor: pointer;
+  }
+  
+  /* === EXPLORAR === */
+  #explore {
+    background: #1f2833;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .map-area {
+    margin-top: 2rem;
+  }
+  
+  .zone {
+    margin: 1rem auto;
+    width: 200px;
+    padding: 1rem;
+    background: #0b0c10;
+    border: 1px solid #45a29e;
+    transition: 0.3s;
+  }
+  
+  .zone:hover {
+    background: #ff3333;
+    box-shadow: 0 0 10px #ff3333;
+  }
+  
+  /* === CONTACTO === */
+  #contact {
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  input, textarea {
+    background: #1f2833;
+    border: 1px solid #45a29e;
+    color: #c5c6c7;
+    padding: 0.6rem;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #66fcf1;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    background: #45a29e;
+    border: none;
+    color: #0b0c10;
+    padding: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #66fcf1;
+    box-shadow: 0 0 10px #66fcf1;
+  }
+  
+  /* === FOOTER === */
+  footer {
+    background: #0b0c10;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #1f2833;
+  }
+  
+  /* === EFECTOS === */
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {opacity: 1;}
+    20%, 24%, 55% {opacity: 0.4;}
+  }
+  #gallery {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #1f2833;
+  }
+  
+  #gallery h2 {
+    color: #66fcf1;
+    margin-bottom: 2rem;
+  }
+  
+  /* CONTENEDOR GENERAL */
+  .slider {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #45a29e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0b0c10;
+    position: relative;
+  }
+  
+  /* CONTIENE TODAS LAS IMÁGENES */
+  .slides {
+    display: flex;
+    width: 100%; /* 4 imágenes */
+    animation: cambio 16s infinite;
+  }
+  
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+    filter: brightness(70%);
+    transition: filter 0.5s ease;
+  }
+  
+  .slide img:hover {
+    filter: brightness(100%);
+  }
+  
+  /* ANIMACIÓN AUTOMÁTICA */
+  @keyframes cambio {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+  
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+  
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+  
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+  
+    100% { transform: translateX(0%); }
+  }
+  
+  #visita {
+    background-color: #1f2833;
+    color: #c5c6c7;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  #visita h2 {
+    color: #66fcf1;
+    margin-bottom: 1rem;
+  }
+  
+  #visita .intro {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    color: #c5c6c7;
+  }
+  
+  /* FORMULARIO */
+  #form-visita {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(11, 12, 16, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #45a29e;
+    box-shadow: 0 0 20px #0b0c10;
+  }
+  
+  #form-visita label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #66fcf1;
+  }
+  
+  #form-visita input,
+  #form-visita textarea {
+    width: 100%;
+    background: #0b0c10;
+    border: 1px solid #45a29e;
+    border-radius: 6px;
+    padding: 0.7rem;
+    color: #c5c6c7;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+  
+  #form-visita input:focus,
+  #form-visita textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #66fcf1;
+    border-color: #66fcf1;
+  }
+  
+  #form-visita button {
+    background-color: #45a29e;
+    color: #0b0c10;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  #form-visita button:hover {
+    background-color: #66fcf1;
+    box-shadow: 0 0 10px #66fcf1;
+  }
+  
